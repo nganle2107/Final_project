@@ -1,0 +1,18 @@
+extend ../layouts/common.pug
+block content
+    h1 T19M 
+    ul.nav.justify-content-center
+        li.nav-item
+            a.nav-link(aria-current='page', href='#') Home
+        li.nav-item
+            a.nav-link(href='#') Explore
+        li.nav-item
+            a.nav-link(href='#') Link
+        li.nav-item
+        li 
+            form(action="/users/search", method="GET", class = "d-flex")
+                input(type ='text', name ="q", class = "form-control")
+                button.btn.btn-primary Search
+    ul
+        each user in users 
+            li= user.id +': ' +user.name    

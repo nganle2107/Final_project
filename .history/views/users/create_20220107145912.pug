@@ -1,0 +1,19 @@
+extend ../layouts/common.pug
+block content
+    div.d-flex.justify-content-center
+        div.justify-content-center.w-50.p-5
+            h1 Sign Up
+            form(action='/users/create', method="POST")
+                .mb-3
+                label.form-label(id = "firstname",for='exampleFormControlInput1') First Name
+                input#exampleFormControlInput1.form-control(name = "firstname",type='text', placeholder='First Name')
+                .mb-3
+                label.form-label(id = "lastname",for='exampleFormControlInput1') Last Name
+                input#exampleFormControlInput1.form-control(name = "lastname",type='text', placeholder='Last Name')
+                .mb-3
+                label.form-label(id="username",for='exampleFormControlInput1') Username
+                input#exampleFormControlInput1.form-control(name="username",type='text', placeholder='username')
+
+                button(class="btn btn-primary mt-3") create
+        div.w-50.p-3
+            h1 Image

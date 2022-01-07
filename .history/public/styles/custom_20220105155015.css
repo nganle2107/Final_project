@@ -1,0 +1,15 @@
+@font-face {
+    font-family: extraBoldRaleWay;
+    src: url(./fonts/Raleway-ExtraBold.ttf);
+    }
+.nav{
+    height: 50px;
+}
+.logo-text{
+    font-family: extraBoldRaleWay;
+    color: red;
+}
+.logo-dot{
+    color: #90D0AF;
+}
+

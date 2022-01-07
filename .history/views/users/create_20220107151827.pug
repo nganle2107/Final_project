@@ -1,0 +1,30 @@
+extend ../layouts/common_unauth.pug
+block content
+    div.theme_color.semiBoldRaleWay.d-flex.justify-content-center
+        div.justify-content-center.w-50.p-5
+            h1.extraBoldRaleWay Sign Up
+            h6.pt-3.pd-3 Create your new account!
+            form(action='/users/create', method="POST")
+                .mb-3
+                label.form-label(id = "firstname",for='exampleFormControlInput1') First Name
+                input#exampleFormControlInput1.form-control(name = "firstname",type='text', placeholder='First Name')
+
+                .mb-3
+                label.form-label(id = "lastname",for='exampleFormControlInput2') Last Name
+                input#exampleFormControlInput2.form-control(name = "lastname",type='text', placeholder='Last Name')
+
+                .mb-3
+                label.form-label(id="username",for='exampleFormControlInput3') Username
+                input#exampleFormControlInput3.form-control(name="username",type='text', placeholder='Username')
+
+                .mb-3
+                label.form-label(id = "firstname",for='exampleFormControlInput1') First Name
+                input#exampleFormControlInput1.form-control(name = "firstname",type='text', placeholder='First Name')
+                
+                .mb-3
+                label.form-label(id = "firstname",for='exampleFormControlInput1') First Name
+                input#exampleFormControlInput1.form-control(name = "firstname",type='text', placeholder='First Name')
+
+                button(class="btn btn-primary mt-3") Sign Up
+        div.w-50
+            image(src="../public/images/signup_pic.png")

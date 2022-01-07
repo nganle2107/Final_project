@@ -1,0 +1,23 @@
+html 
+    head
+        link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css",rel="stylesheet")
+    body
+        ul.nav.justify-content-between
+            li 
+                h1 T19M 
+            li
+                ul.nav.justify-content-center
+                    li.nav-item
+                        a.nav-link(aria-current='page', href='#') Home
+                    li.nav-item
+                        a.nav-link(href='#') Explore
+                    li.nav-item
+                        a.nav-link(href='#') Link
+                    li.nav-item
+                    li 
+                        form(action="/users/search", method="GET", class = "d-flex")
+                            input(type ='text', name ="q", class = "form-control")
+                            button.btn.btn-primary Search
+            li
+                block content
+        block content

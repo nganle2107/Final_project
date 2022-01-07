@@ -1,0 +1,45 @@
+@font-face {
+    font-family: extraBoldRaleWay;
+    src: url(./fonts/Raleway-ExtraBold.ttf);
+    }
+@font-face {
+    font-family: semiBoldRaleWay;
+    src: url(./fonts/Raleway-SemiBold.ttf);
+    }
+.semiBoldRaleWay{
+    font-family: semiBoldRaleWay;
+}
+.extraBoldRaleWay{
+    font-family: extraBoldRaleWay;
+}
+.text_color{
+    color: #6BBB92
+}
+.btn_color{
+    background-color: #6BBB92;
+    border: none;
+}
+.btn:hover{
+    background-color: #549574;
+}
+.i_signUp{
+    background-image: url("../images/signup_pic.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+
+}
+.nav{
+    height: 50px;
+}
+.logo-text{
+    font-family: extraBoldRaleWay;
+    font-size: 36px;
+}
+.logo-dot{
+    color: #90D0AF;
+    font-size: 36px;
+    /* margin-left; */
+}
+
+

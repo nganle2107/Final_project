@@ -1,0 +1,7 @@
+extend ../layouts/common.pug
+block content
+    span= user.name
+block content
+    ul
+        each user in users 
+            li= user.id +': ' +user.name    
